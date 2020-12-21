@@ -1,11 +1,11 @@
-package com.miguelcaetano.hyperskill.implementation_of_basic_algorithms.find_the_index_of_the_first_min_in_an_array;
+package com.miguelcaetano.hyperskill.implementation_of_basic_algorithms.find_index_of_the_last_max_in_an_array;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
-    public static int findIndexOfMin(int[] numbers) {
+    public static int findIndexOfLastMax(int[] numbers) {
         // write your code here
         if (numbers.length == 0) {
             return -1;
@@ -13,15 +13,15 @@ public class Main {
             return 0;
         }
 
-        int minValue = Integer.MAX_VALUE;
+        int maxValue = Integer.MIN_VALUE;
         for (int number : numbers) {
-            if (number <= minValue) {
-                minValue = number;
+            if (number >= maxValue) {
+                maxValue = number;
             }
         }
 
-        for (int i = 0; i < numbers.length ; i++) {
-            if (numbers[i] == minValue) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            if (numbers[i] == maxValue) {
                 return i;
             }
         }
@@ -40,6 +40,6 @@ public class Main {
         } else {
             numbers = new int[0];
         }
-        System.out.println(findIndexOfMin(numbers));
+        System.out.println(findIndexOfLastMax(numbers));
     }
 }
