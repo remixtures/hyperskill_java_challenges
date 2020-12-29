@@ -2,6 +2,7 @@ package com.miguelcaetano.hyperskill.functional_programming.count_passwords;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
