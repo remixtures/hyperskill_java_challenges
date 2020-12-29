@@ -13,8 +13,10 @@ public class Main {
      */
     public static int maxAbsValue(String[] numbers) {
         // write your code here
-       return Arrays.stream(numbers).mapToInt(Integer::parseInt).
-
+       return Arrays.stream(numbers)
+                    .mapToInt(Integer::parseInt)
+                    .map(number -> Math.abs(number)).max()
+                    .getAsInt();
     }
 
     // Don't change the code below
