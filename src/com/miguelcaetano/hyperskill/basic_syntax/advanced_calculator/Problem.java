@@ -1,6 +1,27 @@
 package com.miguelcaetano.hyperskill.basic_syntax.advanced_calculator;
 
-/* Please, do not rename it */
+/* COMMAND-LINE ARGUMENTS:
+
+Write a program that takes an operator ("MAX", "MIN", "SUM") and a sequence of numbers as the command-line arguments
+and then outputs the result of the operator in the standard output.
+
+The description of the operators:
+    - "MAX" finds the max value of a sequence of numbers;
+    - "MIN" find the min value of a sequence of numbers;
+    - "SUM" calculates the sum of a sequence of numbers.
+
+It is guaranteed that a correct operator and at least one number will be passed to the program.
+
+Please, do not rename the provided class Problem.
+
+Sample Input:
+MAX 7 3 4 1 8 11 3 2
+
+Sample Output:
+11
+
+ */
+
 class Problem {
 
     public static void main(String[] args) {
